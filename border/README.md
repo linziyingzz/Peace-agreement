@@ -31,3 +31,14 @@ The result is shown as follow:
 
 (Just the area of Africa(excl MENA))
 
+
+
+## Step 3
+
+At then end, by the histogram, we can see that the difference between the origin data of Africa(excl MENA) and the data of natural resource related according to the number of peace agreements.
+
+
+
+The result is shown as follow:
+
+![Figure3](Figure3.png)
