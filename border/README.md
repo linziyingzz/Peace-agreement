@@ -23,3 +23,11 @@ The result is shown as follow:
 
 * Use the above method to analyze the natural resource related agreements in the new area and draw it.
 
+
+
+The result is shown as follow:
+
+![Figure2](Figure2.png)
+
+(Just the area of Africa(excl MENA))
+
