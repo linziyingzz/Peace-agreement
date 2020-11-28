@@ -42,3 +42,4 @@ At then end, by the histogram, we can see that the difference between the origin
 The result is shown as follow:
 
 ![Figure3](Figure3.png)
+
