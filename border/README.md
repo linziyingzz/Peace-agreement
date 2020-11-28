@@ -15,3 +15,11 @@ The result is shown as follow:
 
 ![Figure1](Figure1.png)
 
+
+
+## Step 2 Africa(excl MENA)
+
+* Reduce the analysis area to Africa(excl MENA)
+
+* Use the above method to analyze the natural resource related agreements in the new area and draw it.
+
