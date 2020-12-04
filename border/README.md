@@ -6,7 +6,15 @@ My part of the assignment 3 is to analyze the connection between border issues a
 
 ## Step 1 
 
-Our motion is to find out the connection between border and natural resource, so the first step is that to filter out the peace agreements in our dataset refer to conflicts over natural resources. The specific steps shown as follow:
+Our motion is to find out the connection between border and natural resource, so the first step is that to filter out the peace agreements in our dataset refer to conflicts over natural resources.
+
+
+
+In the dataset, the variable 'NatRes' takes the value of 1 if the peace agreement includes any mention of natural resources. So we choose 'NatRes'=1 as the condition to select natural resource related rows.
+
+
+
+The specific steps shown as follow:
 
 * Filter the natural resource related agreements out.
 * Show it by country with peace agreement counts.
@@ -21,7 +29,7 @@ The result is shown as follow:
 
 ## Step 2 Africa(excl MENA)
 
-From the assignment 2 result and the above result, we can see that Afirca(excl MENA) is the most worthwhile area to analyze the connection between border and natural resource. So we do the steps as follows:
+From the picture above, we can see that lots of country is in Africa area. With the analysis from assignment 2, we can reduce the area to Africa(excl MENA) that is the most worthwhile area to analyze. So we do the steps as follows:
 
 * Reduce the analysis area to Africa(excl MENA)
 
@@ -39,9 +47,11 @@ The result is shown as follow:
 
 ## Step 3
 
-Q: How can we draw the conclusion of the difference between the origin data and natural resource related over Africa(excl MENA)? 
+Because of the max proportion of peace agreements in Africa(excl MENA), maybe we can contrast the difference between origin data and natural resource related data.
 
-A: maybe use the histogram to show the difference between the origin data of Africa(excl MENA) and the data of natural resource related according to the number of peace agreements.
+Then we count the peace agreements in Africa(excl MENA), in the condition of natural resource related or not.
+
+Sort the data of Africa(excl MENA) and the origin by index, By doing this, it is convenient for us to draw pictures.
 
 
 
@@ -51,3 +61,14 @@ The result is shown as follow:
 
 
 
+## Step 4
+
+explore the connection between border and natural resources.
+
+According to the "PA-X", The variable of 'StBor' and 'StXbor' maybe can present border-related. 
+
+Filter the border & natural resource related peace agreements by country, and sort it by index as same to above origin data. 
+
+Draw the picture to show the difference between border related or not with natural resource related data. But the country which only have 1 or 2 peace agreements maybe have no reference which will be 100% or not. So we choose the top 10 country to analyze, because the number of peace agreements in that is over than 2 with diversity. So we draw the picture like the below.
+
+![image-20201204174057128](Figure4.png)
