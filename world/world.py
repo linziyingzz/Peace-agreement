@@ -26,3 +26,10 @@ for country in country_list:
         type_count_data.loc[index, type_name] = count
     index += 1
 type_count_data.head()
+
+# Use PCA to do dimentionality reduction
+def getPCAData(data,comp):
+    PCA_data = PCA(n_components=comp, whiten=True)
+    PCA_data.fit(data)
+    result = PCA_data.transform(data) # Dimension reduction
+    return result
