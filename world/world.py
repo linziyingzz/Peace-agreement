@@ -36,3 +36,5 @@ def getPCAData(data,comp):
     PCA_data.fit(data)
     result = PCA_data.transform(data) # Dimension reduction
     return result
+
+PCA_data=getPCAData(type_count_data, 2)
