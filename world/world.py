@@ -52,6 +52,7 @@ def drawKMeansResult(kmeans_data):
     plt.figure(figsize=(10,7))
     sns.scatterplot(x=kmeans_data['x'], y=kmeans_data['y'], hue="predicted_label", 
                 data=kmeans_data,palette="muted");
-                
+
 PCA_data=getPCAData(type_count_data, 2)
 kmeans_data=getKMeansData(PCA_data, 6)
+drawKMeansResult(kmeans_data)
