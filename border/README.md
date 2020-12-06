@@ -4,6 +4,10 @@ My part of the assignment 3 is to analyze the connection between border issues a
 
 
 
+## Step 0 feature select(random forest)
+
+Because we just analyze the connection between border and natural resource, the question is that how to choose the features to analyze. Use the random forest to select the best features to analyze. The algorithm is used to feature importance assessment. Look at the contribution of each feature to each tree in the random forest, then take the average value, and finally compare the contribution of different features. Use the OOB error rate as the evaluation index. We limit the scope of feature selection in state definition, and choose the top 2 features to analyze, they would be ‘StBor’ and ‘StXbor’.(according to result of 'feature_select.ipynb')
+
 ## Step 1 
 
 Our motion is to find out the connection between border and natural resource, so the first step is that to filter out the peace agreements in our dataset refer to conflicts over natural resources.
