@@ -5,6 +5,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+from sklearn.decomposition import PCA # For principal components analysis
+from sklearn.cluster import KMeans # For k-means cluster algorithm
+
 file_2017 = pd.read_csv("2017.csv")
 file_2018 = pd.read_csv("2018.csv")
 file_2019 = pd.read_csv("2019.csv")
