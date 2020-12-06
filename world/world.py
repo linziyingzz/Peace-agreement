@@ -37,4 +37,11 @@ def getPCAData(data,comp):
     result = PCA_data.transform(data) # Dimension reduction
     return result
 
+def getKMeansData(PCA_data,k):
+    kmeans_data = pd.DataFrame(columns=['x', 'y'])
+    for index, value in enumerate(PCA_data):
+        new_row={'x': value[0], 'y': value[1]}
+        kmeans_data=kmeans_data.append(new_row, ignore_index=True)
+    kmeans_model=KMeans(n_clusters=k).fit(PCA_data)
+
 PCA_data=getPCAData(type_count_data, 2)
