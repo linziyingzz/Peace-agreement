@@ -49,3 +49,4 @@ def getKMeansData(PCA_data,k):
     return kmeans_data
 
 PCA_data=getPCAData(type_count_data, 2)
+kmeans_data=getKMeansData(PCA_data, 6)
