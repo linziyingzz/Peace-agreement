@@ -54,5 +54,5 @@ def drawKMeansResult(kmeans_data):
                 data=kmeans_data,palette="muted");
 
 PCA_data=getPCAData(type_count_data, 2)
-kmeans_data=getKMeansData(PCA_data, 6)
+kmeans_data=getKMeansData(PCA_data, 5)
 drawKMeansResult(kmeans_data)
