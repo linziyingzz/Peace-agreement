@@ -43,5 +43,9 @@ def getKMeansData(PCA_data,k):
         new_row={'x': value[0], 'y': value[1]}
         kmeans_data=kmeans_data.append(new_row, ignore_index=True)
     kmeans_model=KMeans(n_clusters=k).fit(PCA_data)
+    labels=kmeans_model.labels_.astype(int)
+    kmeans_data['country']=country_list
+    kmeans_data['predicted_label']=labels
+    return kmeans_data
 
 PCA_data=getPCAData(type_count_data, 2)
